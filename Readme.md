@@ -3,7 +3,7 @@
 ## Table of contents
 
 - [Overview](#overview)
-  - [End user persepective](#End user persepective)
+  - [End user persepective](#End-user-persepective)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
