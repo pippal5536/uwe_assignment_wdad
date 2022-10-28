@@ -1,0 +1,10 @@
+p > span > a {
+  text-decoration: none;
+  color: #cb6ce6;
+  font-family: lovelo-line-light;
+}
+
+p > span > a:hover {
+  font-family: lovelo-line-bold;
+  border-bottom: 1px double;
+}

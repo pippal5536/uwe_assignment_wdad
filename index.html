@@ -10,25 +10,37 @@
       href="./images/log0_3-removebg-preview.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="/styles/index.css" />
+    <link href="/dist/output.css" rel="stylesheet" />
   </head>
   <body>
     <header>
       <div class="logo">
-        <img
-          src="./images/log0_3-removebg-preview.png"
-          alt="logo-horizon travels"
-        />
+        <a href="index.html"
+          ><img
+            src="./images/log0_3-removebg-preview.png"
+            alt="logo-horizon travels"
+        /></a>
       </div>
       <nav>
         <ul>
-          <li><a href="">Dates</a></li>
-          <li><a href="">Travel type</a></li>
-          <li><a href="">Destination</a></li>
-          <li><a href="">Log in</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <div class="dropdown">
+              <p class="dropbtn">Travel Type ></p>
+              <div class="dropdown-content">
+                <a href="/travel_page.html">Air Travel</a>
+                <a href="#">Coach Travel</a>
+                <a href="#">Taxi Travel</a>
+                <a href="#">Train Travel</a>
+              </div>
+            </div>
+          </li>
+          <li><a href="login.html">Log in</a></li>
           <li><a href="">Help and Support</a></li>
         </ul>
       </nav>
     </header>
+    <main></main>
   </body>
 </html>

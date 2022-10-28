@@ -1,0 +1,137 @@
+/* custom fronts */
+@font-face {
+  font-family: "lovelo-line-bold";
+  src: url("../fonts/Lovelo-LineBold.ttf");
+}
+@font-face {
+  font-family: "lovelo-line-light";
+  src: url("../fonts/Lovelo-LineLight.ttf");
+}
+@font-face {
+  font-family: "lovelo-line-black";
+  src: url("../fonts/Lovelo-Black.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+}
+body {
+  background-color: #000000;
+  color: white;
+  font-family: "lovelo-line-black";
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.logo > a > img {
+  width: 20%;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}
+nav > ul {
+  background-color: #14213d;
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 0.8rem;
+  display: flex;
+  flex-direction: column;
+}
+nav > ul > li {
+  list-style: none;
+  text-align: center;
+  padding: 1rem;
+  color: #cb6ce6;
+  cursor: pointer;
+  font-family: "lovelo-line-light";
+  letter-spacing: 1px;
+}
+.dropbtn {
+  background-color: none;
+  color: #cb6ce6;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #14213d;
+  width: 20rem;
+  border-radius: 1rem;
+  border: 1px solid #000000;
+}
+
+.dropdown-content a {
+  color: #cb6ce6;
+  padding: 2rem;
+  text-decoration: none;
+  display: block;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  color: #cb6ce6;
+  cursor: pointer;
+  font-family: "lovelo-line-light";
+  letter-spacing: 1px;
+}
+.dropdown-content a:hover {
+  font-family: "lovelo-line-bold";
+  border: 1px solid #cb6ce6;
+  padding: 2rem;
+}
+.dropdown-content a:nth-child(1) {
+  border-radius: 1rem 1rem 0 0;
+}
+.dropdown-content a:nth-child(4) {
+  border-radius: 0 0 1rem 1rem;
+}
+nav > ul > li > a:hover,
+.dropbtn:hover {
+  font-family: "lovelo-line-bold";
+}
+
+@media (min-width: 1440px) {
+  body {
+    font-size: 1.5rem;
+  }
+  .logo > a > img {
+    margin: -1rem auto;
+    width: 10%;
+  }
+  nav > ul {
+    width: 100%;
+    background-color: #000000;
+    margin: 0 auto;
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 2rem;
+  }
+  .dropbtn {
+    font-size: 2rem;
+  }
+  nav > ul > li > a {
+    font-family: "lovelo-line-light";
+  }
+  nav > ul > li > a:hover,
+  .dropbtn:hover {
+    font-family: "lovelo-line-bold";
+    border-left: 1px solid;
+    padding: 0 10px;
+    letter-spacing: 2px;
+  }
+}
