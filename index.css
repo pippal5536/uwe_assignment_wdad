@@ -1,0 +1,28 @@
+/* custom fronts */
+@font-face {
+  font-family: "lovelo-line-bold";
+  src: url("./fonts/Lovelo-LineBold.ttf");
+}
+@font-face {
+  font-family: "lovelo-line-light";
+  src: url("./fonts/Lovelo-LineLight.ttf");
+}
+@font-face {
+  font-family: "lovelo-line-black";
+  src: url("./fonts/Lovelo-Black.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+}
+.logo > img {
+  width: 60%;
+  height: 50%;
+  display: block;
+  margin: -1.5rem auto;
+}
