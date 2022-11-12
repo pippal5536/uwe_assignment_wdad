@@ -4,12 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Horizon Travels- Transportation go brrrrr</title>
-    <link
-      rel="shortcut icon"
-      href="./images/logo ideas/Screenshot 2022-11-08 154316.png"
-      type="image/x-icon"
-    />
+    <title>HT-Sign up page</title>
     <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
@@ -19,6 +14,8 @@
     />
     <!-- External css -->
     <link rel="stylesheet" href="/styles/index.css" />
+    <link rel="stylesheet" href="/styles/login-page.css" />
+    <link rel="stylesheet" href="/styles/registration-page.css" />
     <!-- Poppins from google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -84,53 +81,104 @@
       </nav>
     </header>
     <main>
-      <!-- Booking section, where user will book  -->
-      <section class="booking-section">
-        <div class="background"></div>
-        <div class="booking">
-          <h1>Welcome to Horizon Travels. Your journey lies ahead!</h1>
-          <!-- Form -->
-          <form action="" method="post">
-            <!-- For check boxes -->
-            <div class="form-checkbox">
-              <input type="checkbox" value="way-of-trip" id="one-way" />
-              <label for="one-way">One way trip</label>
-              <input type="checkbox" value="way-of-trip" id="two-way" />
-              <label for="two-way">Two way trip</label>
-            </div>
-            <!-- For address and date  input -->
-            <div class="input-parent">
-              <div class="input-group">
-                <span class="input-group-text" id="from">From</span>
-                <input
-                  type="address"
-                  class="form-control"
-                  placeholder="From: e.g. Bristol"
-                />
-              </div>
-              <div class="input-group">
-                <span class="input-group-text" id="to">To </span>
-                <input
-                  type="address"
-                  class="form-control"
-                  placeholder="To: e.g. London"
-                />
-              </div>
-              <div class="input-group">
-                <span class="input-group-text" id="date">Date</span>
-                <input type="date" class="form-control" />
-              </div>
-              <button type="submit">SEARCH</button>
-            </div>
-          </form>
+      <section class="login-form">
+        <div class="logo-container">
+          <img src="/images/logo ideas/logo-flower.png" alt="logo" />
         </div>
+
+        <h1 class="form-header">Sign up</h1>
+        <form action="">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"
+              >First name</label
+            >
+            <input
+              type="name"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="Your First name:"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Last name</label
+            >
+            <input
+              type="name"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="Your Last name:"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Email address</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="Your email address:"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="inputPassword" class="col-sm-2 col-form-label"
+              >Password</label
+            >
+
+            <input
+              type="password"
+              placeholder="Your password:"
+              class="form-control"
+              id="inputPassword"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="inputPassword" class="col-sm-2 col-form-label"
+              >Confirm password</label
+            >
+
+            <input
+              type="password"
+              placeholder="Confirm your password:"
+              class="form-control"
+              id="inputPassword"
+            />
+          </div>
+          <div class="forgot-password">
+            <p>
+              By creating an account, you agree to our
+              <a href="">Privacy Policy</a>
+            </p>
+          </div>
+          <button class="log-in-button">Sign up</button>
+          <div>
+            Already have an account? <a href="/login-page.html">Sign in</a>
+          </div>
+        </form>
+      </section>
+      <section class="rule">
+        <div class="line"></div>
+        <div>or</div>
+        <div class="line"></div>
+      </section>
+      <section class="alternative-login-section">
+        <button>
+          Sign up with Google
+          <img src="/images/logo ideas/2991148.png" alt="google icon" />
+        </button>
+        <button>
+          Sign up with Facebook
+          <img src="/images/logo ideas/facebook.png" alt="facebook icon" />
+        </button>
       </section>
     </main>
-    <footer>All rights reserved</footer>
+    <!-- bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
+    <footer>All rights reserved</footer>
   </body>
 </html>

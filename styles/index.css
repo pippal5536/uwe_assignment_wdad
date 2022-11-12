@@ -15,7 +15,7 @@
   width: 100%;
 }
 .icon-and-button > button {
-  margin-left: 45%;
+  /* margin-left: 45%; */
 }
 nav > div > ul {
   width: 80%;
@@ -42,6 +42,18 @@ nav > div > ul > li > a > span > svg {
 nav > ul > li > a:hover {
   color: #f7a76c;
 }
+.dropdown > button {
+  border: none;
+  background-color: white;
+}
+.dropdown-item:hover {
+  background-color: rgb(156, 41, 41);
+  color: #f7a76c;
+}
+.dropdown-item:focus {
+  color: #ed6f15;
+}
+
 /* Form section */
 .booking-section {
   height: 36rem;
@@ -55,6 +67,14 @@ nav > ul > li > a:hover {
   background-position: bottom;
   width: 100%;
   height: 40%;
+  position: relative;
+}
+.background::after {
+  background-color: rgb(156, 41, 41);
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.5;
 }
 
 .booking {
@@ -119,8 +139,17 @@ form > div > button:hover {
   outline: none;
   box-shadow: 0 0 10px rgb(156, 41, 41) !important;
 }
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 10rem;
+  width: 100%;
+  background-color: rgb(156, 41, 41);
+  color: #f7a76c;
+  padding: 1rem;
+}
 /* Responsive design for pc */
-@media (min-width: 1440px) {
+@media (min-width: 1400px) {
   /* navbar section */
   .website-logo {
     width: 160px;
@@ -143,7 +172,7 @@ form > div > button:hover {
     border-bottom: none;
   }
   nav > div > ul > li > a:hover {
-    color: #f7a76c;
+    color: #f7a76c !important;
   }
   /* Booking section */
   .booking-section {
@@ -162,7 +191,7 @@ form > div > button:hover {
   .booking h1 {
     padding: 5% 2rem 0 2rem;
     text-align: start;
-    font-size: 200%;
+    font-size: 180%;
     line-height: 1.8em;
     font-weight: 900;
   }
@@ -199,14 +228,14 @@ form > div > button:hover {
   .input-group {
     width: 40%;
     margin-right: 1rem;
-    height: 40%;
+    height: 3rem;
     font-size: 120%;
   }
   form > div > button {
     width: 40%;
     margin-top: 0;
     font-size: 120%;
-    height: 40%;
+    height: 3rem;
     letter-spacing: 5px;
   }
 }
