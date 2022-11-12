@@ -39,7 +39,7 @@ nav > div > ul > li > a {
 nav > div > ul > li > a > span > svg {
   width: 15px;
 }
-nav > ul > li > a:hover {
+nav > div > ul > li > a:hover {
   color: #f7a76c;
 }
 .dropdown > button {
