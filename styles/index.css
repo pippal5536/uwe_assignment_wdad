@@ -35,6 +35,7 @@ nav > div > ul > li {
 nav > div > ul > li > a {
   text-decoration: none;
   color: black;
+  font-weight: bold;
 }
 nav > div > ul > li > a > span > svg {
   width: 15px;
@@ -66,11 +67,11 @@ nav > div > ul > li > a:hover {
   background-repeat: no-repeat;
   background-position: bottom;
   width: 100%;
-  height: 40%;
+  height: 50%;
   position: relative;
 }
 .background::after {
-  background-color: rgb(156, 41, 41);
+  /* background-color: rgb(156, 41, 41); */
   content: "";
   position: absolute;
   inset: 0;
@@ -134,6 +135,11 @@ form > div > button:hover {
   color: #ed6f15;
   background-color: rgb(148, 37, 37);
 }
+.form-control:hover {
+  border: 1px solid rgb(156, 41, 41) !important;
+  outline: none;
+  box-shadow: 0 0 10px rgb(156, 41, 41) !important;
+}
 .input-group > input:focus {
   border: 1px solid rgb(156, 41, 41) !important;
   outline: none;
@@ -147,6 +153,30 @@ footer {
   background-color: rgb(156, 41, 41);
   color: #f7a76c;
   padding: 1rem;
+}
+.footer-main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.connect > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.connect img {
+  width: 20px;
+  margin-left: 10px;
+}
+.copyright {
+  margin-top: 1rem;
+  font-size: 60%;
+}
+footer a {
+  text-decoration: none;
+  color: #f7a76c;
+}
+footer a:hover {
+  color: #ed6f15;
 }
 /* Responsive design for pc */
 @media (min-width: 1400px) {
@@ -176,24 +206,27 @@ footer {
   }
   /* Booking section */
   .booking-section {
-    height: 35rem;
+    height: 37rem;
     position: relative;
   }
   .background {
     background-color: rgb(156, 41, 41);
-    height: 50%;
+    height: 100%;
   }
   .booking {
-    width: 90%;
-    height: 60vh;
-    left: 5%;
+    width: 80%;
+    height: 40vh;
+    left: 10%;
+    top: 24.5%;
   }
+
   .booking h1 {
     padding: 5% 2rem 0 2rem;
     text-align: start;
-    font-size: 180%;
+    font-size: 160%;
     line-height: 1.8em;
     font-weight: 900;
+    text-align: center;
   }
   form {
     width: 100%;
@@ -208,9 +241,9 @@ footer {
   .form-checkbox {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     width: 100%;
-    font-size: 120%;
+    font-size: 100%;
   }
 
   .form-checkbox > input {
@@ -226,15 +259,15 @@ footer {
     justify-content: space-between;
   }
   .input-group {
-    width: 40%;
+    width: 25%;
     margin-right: 1rem;
-    height: 3rem;
+    height: 2rem;
     font-size: 120%;
   }
   form > div > button {
-    width: 40%;
+    width: 12.5%;
     margin-top: 0;
-    font-size: 120%;
+    font-size: 100%;
     height: 3rem;
     letter-spacing: 5px;
   }
